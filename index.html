@@ -2,26 +2,33 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/script.js"></script>
     <title>form-letter</title>
   </head>
   <body>
-    <form class="form-inline">
-      <div class="form-group">
-        <label for="exampleInputName2">Name</label>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail2">Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-      </div>
-      <button type="submit" class="btn btn-default">Send Letter</button>
-    </form>
-    <div class="well" "letter">
+    <div class="well">
+      <h1>Make a personal letter for someone!</h1>
+      <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+      </p>
+    </div>
+    <div>
+      <form id="blanks" class="form-inline">
+        <div class="form-group">
+          <label for="inputname">Name</label>
+          <input type="text" class="form-control" id="inputname" placeholder="Jane Doe">
+        </div>
+        <div class="form-group">
+          <label for="inputemail">Email</label>
+          <input type="email" class="form-control" id="inputemail" placeholder="jane.doe@example.com">
+        </div>
+        <button type="submit" class="btn btn-default">Send Letter</button>
+      </form>
+    </div>
+    <div class="well letter">
       <h1>Personal Letter</h1>
-      <p id="letter-text">Dear <span class="name"></span>,Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut<span class="name"></span> labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit<span class="name"></span> qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<span class="name"></span>.
+      <p id="letter-text">Dear <span class="name"></span>, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut <span class="name"></span> labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit <span class="name"></span> qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? <span class="name"></span>.
         -Sincerly,
           Epicodus.</p>
     </div>
